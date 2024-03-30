@@ -12,4 +12,6 @@ controller:
       service.beta.kubernetes.io/oci-load-balancer-tls-secret: mosip-sandbox-cert-secret
     targetPorts:
       https: "http"
+  admissionWebhooks:
+    enabled: false  
 
