@@ -70,7 +70,7 @@ spec:
             service.beta.kubernetes.io/oci-load-balancer-tls-secret: mosip-sandbox-cert-secret
             #service.beta.kubernetes.io/oci-load-balancer-subnet1: ""
             #oci.oraclecloud.com/oci-network-security-groups: ""
-            oci.oraclecloud.com/security-rule-management-mode: "None"            
+            #oci.oraclecloud.com/security-rule-management-mode: "None"            
           service:
             ports:
             - port: 15021
