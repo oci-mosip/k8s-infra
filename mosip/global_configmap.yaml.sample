@@ -12,23 +12,23 @@ metadata:
   name: global
   namespace: default
 data:
-  installation-name: sandbox
-  installation-domain: sandbox.xyz.net
+  installation-name: oci-mosip-sandbox
+  installation-domain: MOSIP_PRIMARY_DOMAIN
   mosip-version: develop
-  mosip-api-host: api.sandbox.xyz.net
-  mosip-api-internal-host: api-internal.sandbox.xyz.net
-  mosip-prereg-host: prereg.sandbox.xyz.net
-  mosip-activemq-host: activemq.sandbox.xyz.net
-  mosip-kibana-host: kibana.sandbox.xyz.net
-  mosip-admin-host: admin.sandbox.xyz.net
-  mosip-regclient-host: regclient.sandbox.xyz.net
-  mosip-minio-host: minio.sandbox.xyz.net
-  mosip-kafka-host: kafka.sandbox.xyz.net
-  mosip-iam-external-host: iam.sandbox.xyz.net
-  mosip-postgres-host: postgres.sandbox.xyz.net
-  mosip-pmp-host: pmp.sandbox.xyz.net
-  mosip-resident-host: resident.sandbox.xyz.net
-  mosip-compliance-host: compliance.sandbox.xyz.net
-  mosip-esignet-host: esignet.sandbox.xyz.net
-  mosip-smtp-host: smtp.sandbox.xyz.net
+  mosip-api-host: api.MOSIP_PRIMARY_DOMAIN
+  mosip-api-internal-host: api-internal.MOSIP_PRIMARY_DOMAIN
+  mosip-prereg-host: prereg.MOSIP_PRIMARY_DOMAIN
+  mosip-activemq-host: activemq.MOSIP_PRIMARY_DOMAIN
+  mosip-kibana-host: kibana.MOSIP_PRIMARY_DOMAIN
+  mosip-admin-host: admin.MOSIP_PRIMARY_DOMAIN
+  mosip-regclient-host: regclient.MOSIP_PRIMARY_DOMAIN
+  mosip-minio-host: minio.MOSIP_PRIMARY_DOMAIN
+  mosip-kafka-host: kafka.MOSIP_PRIMARY_DOMAIN
+  mosip-iam-external-host: iam.MOSIP_PRIMARY_DOMAIN
+  mosip-postgres-host: postgres.MOSIP_PRIMARY_DOMAIN
+  mosip-pmp-host: pmp.MOSIP_PRIMARY_DOMAIN
+  mosip-resident-host: resident.MOSIP_PRIMARY_DOMAIN
+  mosip-compliance-host: compliance.MOSIP_PRIMARY_DOMAIN
+  mosip-esignet-host: esignet.MOSIP_PRIMARY_DOMAIN
+  mosip-smtp-host: smtp.MOSIP_PRIMARY_DOMAIN
   is_glowroot_env: absent
