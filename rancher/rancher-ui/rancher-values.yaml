@@ -5,11 +5,8 @@ ingress:
   includeDefaultExtraAnnotations: true
   extraAnnotations:
       kubernetes.io/ingress.class: nginx
-  tls: 
-    source: rancher
-    
+
+tls: external
 rancherImage: rancher/rancher
-
 replicas: 2
-
 bootstrapPassword: 'admin'
