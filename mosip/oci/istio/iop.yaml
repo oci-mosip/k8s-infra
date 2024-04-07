@@ -12,9 +12,9 @@ spec:
     defaultConfig:
       proxyMetadata:
         ISTIO_META_IDLE_TIMEOUT: 0s
-      holdApplicationUntilProxyStarts: true
-      gatewayTopology:
-        numTrustedProxies: 2
+#      holdApplicationUntilProxyStarts: true
+#      gatewayTopology:
+#        numTrustedProxies: 2
 #    extensionProviders:
 #    - name: oauth2-proxy
 #      envoyExtAuthzHttp:
