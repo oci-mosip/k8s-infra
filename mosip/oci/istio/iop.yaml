@@ -12,7 +12,7 @@ spec:
     defaultConfig:
       proxyMetadata:
         ISTIO_META_IDLE_TIMEOUT: 0s
-#      holdApplicationUntilProxyStarts: true
+      holdApplicationUntilProxyStarts: true
 #      gatewayTopology:
 #        numTrustedProxies: 2
 #    extensionProviders:
