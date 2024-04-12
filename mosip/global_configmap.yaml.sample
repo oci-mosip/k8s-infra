@@ -25,6 +25,7 @@ data:
   mosip-minio-host: minio.MOSIP_PRIMARY_DOMAIN
   mosip-kafka-host: kafka.MOSIP_PRIMARY_DOMAIN
   mosip-iam-external-host: iam.MOSIP_PRIMARY_DOMAIN
+  mosip-idp-host: idp.MOSIP_PRIMARY_DOMAIN
   mosip-postgres-host: postgres.MOSIP_PRIMARY_DOMAIN
   mosip-pmp-host: pmp.MOSIP_PRIMARY_DOMAIN
   mosip-resident-host: resident.MOSIP_PRIMARY_DOMAIN
