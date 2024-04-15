@@ -15,21 +15,21 @@ data:
   installation-name: oci-mosip-sandbox
   installation-domain: MOSIP_PRIMARY_DOMAIN
   mosip-version: develop
-  mosip-api-host: api.MOSIP_PRIMARY_DOMAIN
-  mosip-api-internal-host: api-internal.MOSIP_PRIMARY_DOMAIN
-  mosip-prereg-host: prereg.MOSIP_PRIMARY_DOMAIN
-  mosip-activemq-host: activemq.MOSIP_PRIMARY_DOMAIN
-  mosip-kibana-host: kibana.MOSIP_PRIMARY_DOMAIN
-  mosip-admin-host: admin.MOSIP_PRIMARY_DOMAIN
-  mosip-regclient-host: regclient.MOSIP_PRIMARY_DOMAIN
-  mosip-minio-host: minio.MOSIP_PRIMARY_DOMAIN
-  mosip-kafka-host: kafka.MOSIP_PRIMARY_DOMAIN
-  mosip-iam-external-host: iam.MOSIP_PRIMARY_DOMAIN
-  mosip-idp-host: idp.MOSIP_PRIMARY_DOMAIN
-  mosip-postgres-host: postgres.MOSIP_PRIMARY_DOMAIN
-  mosip-pmp-host: pmp.MOSIP_PRIMARY_DOMAIN
-  mosip-resident-host: resident.MOSIP_PRIMARY_DOMAIN
-  mosip-compliance-host: compliance.MOSIP_PRIMARY_DOMAIN
-  mosip-esignet-host: esignet.MOSIP_PRIMARY_DOMAIN
-  mosip-smtp-host: smtp.MOSIP_PRIMARY_DOMAIN
+  mosip-api-host: mosip-api.MOSIP_PRIMARY_DOMAIN
+  mosip-api-internal-host: mosip-api-internal.MOSIP_PRIMARY_DOMAIN
+  mosip-prereg-host: mosip-prereg.MOSIP_PRIMARY_DOMAIN
+  mosip-activemq-host: mosip-activemq.MOSIP_PRIMARY_DOMAIN
+  mosip-kibana-host: mosip-kibana.MOSIP_PRIMARY_DOMAIN
+  mosip-admin-host: mosip-admin.MOSIP_PRIMARY_DOMAIN
+  mosip-regclient-host: mosip-regclient.MOSIP_PRIMARY_DOMAIN
+  mosip-minio-host: mosip-minio.MOSIP_PRIMARY_DOMAIN
+  mosip-kafka-host: mosip-kafka.MOSIP_PRIMARY_DOMAIN
+  mosip-iam-external-host: mosip-iam.MOSIP_PRIMARY_DOMAIN
+  mosip-idp-host: mosip-idp.MOSIP_PRIMARY_DOMAIN
+  mosip-postgres-host: mosip-postgres.MOSIP_PRIMARY_DOMAIN
+  mosip-pmp-host: mosip-pmp.MOSIP_PRIMARY_DOMAIN
+  mosip-resident-host: mosip-resident.MOSIP_PRIMARY_DOMAIN
+  mosip-compliance-host: mosip-compliance.MOSIP_PRIMARY_DOMAIN
+  mosip-esignet-host: mosip-esignet.MOSIP_PRIMARY_DOMAIN
+  mosip-smtp-host: mosip-smtp.MOSIP_PRIMARY_DOMAIN
   is_glowroot_env: absent
