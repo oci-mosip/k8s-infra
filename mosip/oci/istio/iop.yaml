@@ -51,7 +51,9 @@ spec:
             service.beta.kubernetes.io/oci-load-balancer-shape-flex-min: "10"
             service.beta.kubernetes.io/oci-load-balancer-shape-flex-max: "100"
             service.beta.kubernetes.io/oci-load-balancer-ssl-ports: "443"    
-            service.beta.kubernetes.io/oci-load-balancer-tls-secret: mosip-sandbox-cert-secret
+            service.beta.kubernetes.io/oci-load-balancer-tls-secret: mosip-sandbox-cert-
+            oci.oraclecloud.com/oci-network-security-groups: "OCI_PUBLIC_LB_NSG"
+            oci.oraclecloud.com/security-rule-management-mode: "None"              
       - name: istio-ingressgateway-internal
         enabled: true
         label:
@@ -70,7 +72,7 @@ spec:
             service.beta.kubernetes.io/oci-load-balancer-tls-secret: mosip-sandbox-cert-secret
             #service.beta.kubernetes.io/oci-load-balancer-subnet1: ""
             oci.oraclecloud.com/oci-network-security-groups: "OCI_PUBLIC_LB_NSG"
-            oci.oraclecloud.com/security-rule-management-mode: "NSG"            
+            oci.oraclecloud.com/security-rule-management-mode: "None"            
           service:
             ports:
             - port: 15021
