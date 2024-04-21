@@ -4,7 +4,7 @@ controller:
     type: LoadBalancer
     annotations:
       oci.oraclecloud.com/load-balancer-type: "lb"
-      # service.beta.kubernetes.io/oci-load-balancer-internal: "true"
+      service.beta.kubernetes.io/oci-load-balancer-internal: "true"
       service.beta.kubernetes.io/oci-load-balancer-backend-protocol: HTTP
       service.beta.kubernetes.io/oci-load-balancer-shape: "flexible"
       service.beta.kubernetes.io/oci-load-balancer-shape-flex-min: "10"
