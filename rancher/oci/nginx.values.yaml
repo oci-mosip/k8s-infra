@@ -5,6 +5,8 @@ controller:
     annotations:
       oci.oraclecloud.com/load-balancer-type: "lb"
       service.beta.kubernetes.io/oci-load-balancer-internal: "true"
+      oci.oraclecloud.com/oci-network-security-groups: OCI_PRIVATE_LB_NSG_ID
+      oci.oraclecloud.com/security-rule-management-mode: "None"
       service.beta.kubernetes.io/oci-load-balancer-backend-protocol: HTTP
       service.beta.kubernetes.io/oci-load-balancer-shape: "flexible"
       service.beta.kubernetes.io/oci-load-balancer-shape-flex-min: "10"
