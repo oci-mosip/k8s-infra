@@ -3,9 +3,17 @@ controller:
   service:
     type: LoadBalancer
     annotations:
-      service.beta.kubernetes.io/aws-load-balancer-proxy-protocol: "*"
-      service.beta.kubernetes.io/aws-load-balancer-type: "nlb"
-      service.beta.kubernetes.io/aws-load-balancer-internal: "true"
-  config:
-    use-forwarded-headers: "true"
-    use-proxy-protocol: "true"
+      oci.oraclecloud.com/load-balancer-type: "lb"
+      service.beta.kubernetes.io/oci-load-balancer-internal: "true"
+      oci.oraclecloud.com/oci-network-security-groups: OCI_PRIVATE_LB_NSG_ID
+      oci.oraclecloud.com/security-rule-management-mode: "None"
+      service.beta.kubernetes.io/oci-load-balancer-backend-protocol: HTTP
+      service.beta.kubernetes.io/oci-load-balancer-shape: "flexible"
+      service.beta.kubernetes.io/oci-load-balancer-shape-flex-min: "10"
+      service.beta.kubernetes.io/oci-load-balancer-shape-flex-max: "100"
+      service.beta.kubernetes.io/oci-load-balancer-ssl-ports: "443"
+      service.beta.kubernetes.io/oci-load-balancer-tls-secret: mosip-sandbox-cert-secret
+    targetPorts:
+      https: "http"
+  admissionWebhooks:
+    enabled: false  
