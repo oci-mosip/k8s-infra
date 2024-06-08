@@ -32,4 +32,8 @@ data:
   mosip-compliance-host: compliance.MOSIP_PRIMARY_DOMAIN
   mosip-esignet-host: esignet.MOSIP_PRIMARY_DOMAIN
   mosip-smtp-host: smtp.MOSIP_PRIMARY_DOMAIN
+  mosip-signup-host: signup.MOSIP_PRIMARY_DOMAIN
+  mosip-injiweb-host: injiweb.MOSIP_PRIMARY_DOMAIN
+  mosip-injiverify-host: injiverify.MOSIP_PRIMARY_DOMAIN
+  mosip-injicertify-host: injicertify.MOSIP_PRIMARY_DOMAIN
   is_glowroot_env: absent
