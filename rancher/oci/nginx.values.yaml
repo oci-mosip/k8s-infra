@@ -1,0 +1,19 @@
+## Settings here would spawn a Internal Network Loadbalancer (LB) on a AWS.  The LB should be accessed over Wireguard that receives traffic from Internet and directs it to LB.  Using external LB is not recommended as Rancher install needs to be as secure as possible.
+controller:
+  service:
+    type: LoadBalancer
+    annotations:
+      oci.oraclecloud.com/load-balancer-type: "lb"
+      service.beta.kubernetes.io/oci-load-balancer-internal: "true"
+      oci.oraclecloud.com/oci-network-security-groups: OCI_PRIVATE_LB_NSG_ID
+      oci.oraclecloud.com/security-rule-management-mode: "None"
+      service.beta.kubernetes.io/oci-load-balancer-backend-protocol: HTTP
+      service.beta.kubernetes.io/oci-load-balancer-shape: "flexible"
+      service.beta.kubernetes.io/oci-load-balancer-shape-flex-min: "10"
+      service.beta.kubernetes.io/oci-load-balancer-shape-flex-max: "100"
+      service.beta.kubernetes.io/oci-load-balancer-ssl-ports: "443"
+      service.beta.kubernetes.io/oci-load-balancer-tls-secret: mosip-sandbox-cert-secret
+    targetPorts:
+      https: "http"
+  admissionWebhooks:
+    enabled: false  
